@@ -8,7 +8,7 @@ import '../App.css'
 export default function Nav() {
     return (
         <div className='header'>
-            <img src={logo} className='logo' />
+            <img src={logo} alt='OPS logo' className='logo' />
             <nav>
                 <ul className='nav-list'>
                     <li>
