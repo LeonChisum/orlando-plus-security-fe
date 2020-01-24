@@ -118,21 +118,27 @@
   text-decoration: none;
   color: #cccccc;
 }
+.footer a:hover{
+  text-decoration: none;
+  color: orange;
+  font-weight: 490;
+}
 
 .footer-nav{
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
+  font-size: 0.8rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: space-between;
   width: 90%;
-  padding: 80px;
+  padding: 60px;
 }
 
 .footer-nav section{
-  height: auto;
+  height: 300px;
   display: flex;
   flex-direction: column;
 }
