@@ -104,6 +104,31 @@
   color: white;
 }
 
+/* About Us */
+.team-background{
+  background-color: #cccccc;
+}
+.sub-header{
+  background: #01010d;
+  color: #cccccc;
+  text-align: center;
+  padding: 30px 0;
+  letter-spacing: .2rem;
+}
+.team-container{
+  width:70%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  align-content: center;
+}
+.team-view{
+  justify-content: space-evenly;
+  padding-top: 200px;
+}
+
+/* Footer */
 .footer{
   background: #01010d;
   color: #cccccc;
