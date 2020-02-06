@@ -59,7 +59,7 @@
 /* Home Page */
 
 .home-bg{
-  height: 100vh;
+  height: 120vh;
   background: #cccccc;
   background-image: url('./images/many-cameras.jpg');
   background-size: cover;
