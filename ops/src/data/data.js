@@ -1,7 +1,7 @@
 // imported images
 import MC from "../images/MC Headshot.jpg";
 import CH from "../images/CH Headshot.JPG";
-import TW from "../images/TW Headshot.JPG";
+import TW from "../images/TW Headshot2.jpg";
 
 export const managementData = [
   {

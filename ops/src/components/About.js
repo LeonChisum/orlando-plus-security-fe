@@ -21,65 +21,6 @@ export default function About() {
           })}
         </div>
       </section>
-      {/* <Card.Group itemsPerRow='three'>
-                    <Card>
-                        <Image src={MC} wrapped ui={false} />
-                        <Card.Content>
-                        <Card.Header>MICHAEL CALLAGHAN</Card.Header>
-                        <Card.Meta>
-                            <span className='date'>PRESIDENT</span>
-                        </Card.Meta>
-                        <Card.Description>
-                            Mike is the President.
-                        </Card.Description>
-                        </Card.Content>
-                        <Card.Content extra>
-                        <a>
-                            <Icon name='envelope outline' />
-                            22 Friends
-                        </a>
-                        </Card.Content>
-                    </Card>
-               
-                    <Card>
-                        <Image src={CH} wrapped ui={false} className='image-container' />
-                        <Card.Content>
-                        <Card.Header>MICHAEL CALLAGHAN</Card.Header>
-                        <Card.Meta>
-                            <span className='date'>PRESIDENT</span>
-                        </Card.Meta>
-                        <Card.Description>
-                            Mike is the President.
-                        </Card.Description>
-                        </Card.Content>
-                        <Card.Content extra>
-                        <a>
-                            <Icon name='envelope outline' />
-                            22 Friends
-                        </a>
-                        </Card.Content>
-                    </Card>
-               
-                    <Card>
-                        <Image src={TW} wrapped ui={false} />
-                        <Card.Content>
-                        <Card.Header>MICHAEL CALLAGHAN</Card.Header>
-                        <Card.Meta>
-                            <span className='date'>PRESIDENT</span>
-                        </Card.Meta>
-                        <Card.Description>
-                            Mike is the President.
-                        </Card.Description>
-                        </Card.Content>
-                        <Card.Content extra>
-                        <a>
-                            <Icon name='envelope outline' />
-                            22 Friends
-                        </a>
-                        </Card.Content>
-                    </Card>
-            
-            </Card.Group> */}
     </div>
   );
 }
