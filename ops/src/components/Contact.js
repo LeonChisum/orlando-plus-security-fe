@@ -4,7 +4,10 @@ import UnderConstruction from './UnderConstruction'
 export default function Contact() {
     return (
         <div>
-            <UnderConstruction />
+           <section>
+               <h2>Need More Information?</h2>
+               
+           </section>
         </div>
     )
 }

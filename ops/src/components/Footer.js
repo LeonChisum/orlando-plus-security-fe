@@ -25,6 +25,7 @@ export default function Footer() {
             <a
               href="http://maps.google.com/?q=7616SouthlandBlvd,Ste108Orlando,FL32809"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span>Orlando Plus Security & Event Staffing</span>
               <br />
@@ -35,7 +36,7 @@ export default function Footer() {
               <br />
             </a>
             <h5>Contact</h5>
-            <a href="mailto:info@Orlandoplussecurity.com" target="_blank">
+            <a href="mailto:info@Orlandoplussecurity.com" target="_blank" rel="noopener noreferrer">
               info@orlandoplussecurity.com
             </a>
             <a href="tel:4078015323">(407)-801-5323</a>
@@ -43,7 +44,7 @@ export default function Footer() {
         </section>
         <section>
           <h5>Follow</h5>
-          <a href="https://www.facebook.com/OrlPlus/" target="_blank">
+          <a href="https://www.facebook.com/OrlPlus/" target="_blank" rel="noopener noreferrer">
             Facebook
           </a>
         </section>

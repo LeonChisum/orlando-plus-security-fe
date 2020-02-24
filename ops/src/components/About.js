@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Card, Icon, Image, Grid } from "semantic-ui-react";
 
 // imported data
 import { managementData } from "../data/data";
 import ManagementCard from "./ManagementCard";
 
 export default function About() {
-  const [management, setManagment] = useState(managementData);
+  const [management] = useState(managementData); 
 
   return (
     <div className="team-background">
@@ -17,7 +16,7 @@ export default function About() {
       <section className="team-container">
         <div className="card-wrapper">
           {management.map(i => {
-            return <ManagementCard key={i.id} manager={i} />;
+            return <ManagementCard key={i.id} manager={i} />; //Creating a card for each excutive
           })}
         </div>
       </section>
