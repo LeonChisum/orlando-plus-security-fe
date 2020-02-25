@@ -25,7 +25,7 @@ export const managementData = [
     image: TW,
     title: "Director of Operations",
     bio:
-      "Tristan joined the Century Security & Event Staffing in Orlando, Florida in February of 2012 as an Operations Supervisor, and was promoted to Operations Manager in 2014.  With a strong technical background supported by production and management experience, Tristan manages daily on-site security operations in New Orleans, Las Vegas, Tucson, and Orlando.  He has also participated as management on events in New York and Washington D.C.  In addition, Tristan’s responsibilities include equipment maintenance, lost and found management, and oversees all CCTV equipment and installation.",
+      "With a strong technical background supported by production and management experience, Tristan manages daily on-site security operations. Tristan has experience working on several events with many diverse roles and responsibilities for over seven years and has experience in many different types of events from concerts to conventions. In addition, Tristan oversees all CCTV equipment installation and dismantle, logistics, and monitoring in several cities.  ",
     id: 3
   }
 ];

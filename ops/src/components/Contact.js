@@ -1,13 +1,16 @@
-import React from 'react'
-import UnderConstruction from './UnderConstruction'
+import React from "react";
+import ContactForm from "./ContactForm"
 
 export default function Contact() {
-    return (
-        <div>
-           <section>
-               <h2>Need More Information?</h2>
-               
-           </section>
-        </div>
-    )
+  return (
+    <div>
+      <section className="sub-header">
+        <h4>NEED MORE INFORMATION?</h4>
+        <p>Send us a message!</p>
+      </section>
+      <section className="team-container">
+        <ContactForm />
+      </section>
+    </div>
+  );
 }

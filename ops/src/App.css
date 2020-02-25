@@ -130,7 +130,6 @@
 .card-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   align-items: center;
   align-content: center;
 }
@@ -198,6 +197,13 @@
   max-width: 100%;
 }
 
+/* Contact */
+.form-container {
+  max-width: 50%;
+  margin: 4rem auto;
+  padding: 8rem 0;
+  border: 1px solid red;
+}
 /* Footer */
 .footer {
   background: #01010d;
