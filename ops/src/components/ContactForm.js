@@ -20,7 +20,7 @@ export default function ContactForm() {
   };
   return (
     <div className='form-container'>
-      <form className='form' onSubmit={handleSubmit}>
+      <form className='form' action='POST' data-netlify="true">
         <input
           type="text"
           name="name"
