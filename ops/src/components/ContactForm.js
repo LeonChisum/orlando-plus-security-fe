@@ -1,19 +1,49 @@
-import React from "react";
-import { Form, Button } from "semantic-ui-react";
+import React, { useState } from "react";
+import { Form, Segment, Button } from "semantic-ui-react";
 
 export default function ContactForm() {
+
+  const clientObj = {
+    name: "",
+    email: "",
+    message: ""
+  }
+  const [client, setClient] = useState(clientObj);
+
+  const handleChange = e => {
+    setClient({ ...client, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    // setClient(clientObj);
+  };
   return (
-    <div>
-      <Form>
-        <Form.Group widths="equal">
-          <Form.Input fluid label="Name" placeholder="Name" error />
-          <Form.Input fluid label="Email" placeholder="Email" />
-          <Form.TextArea placeholder="Message..." error />
-        </Form.Group>
-        {/* <Form.TextArea placeholder="Message..." error /> */}
-        <Form.Checkbox label="Send me an Email to Confirm" error />
-        <Button inverted color='orange'>Submit</Button>
-      </Form>
+    <div className='form-container'>
+      <form className='form' onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={client.name}
+          onChange={handleChange}
+        ></input>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={client.email}
+          onChange={handleChange}
+        ></input>
+        <textarea
+          type="text"
+          name="message"
+          placeholder="Enter a Message..."
+          value={client.message}
+          onChange={handleChange}
+        ></textarea>
+        <button>SEND</button>
+      </form>
     </div>
   );
 }

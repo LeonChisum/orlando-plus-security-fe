@@ -126,6 +126,7 @@
 }
 .team-container {
   background-color: #cccccc;
+  padding: 1.5rem 0;
 }
 .card-wrapper {
   display: flex;
@@ -199,10 +200,42 @@
 
 /* Contact */
 .form-container {
-  max-width: 50%;
-  margin: 4rem auto;
-  padding: 8rem 0;
-  border: 1px solid red;
+  width: 100%;
+  padding: 0 20px;
+}
+.form{
+  min-width: 90%;
+  margin: 0 auto;
+  padding: .6rem;
+  border-radius: 5px;
+  /* background: #01010d; */
+  border-right: 1px solid #01010d ;
+  border-left: 1px solid #01010d ;
+  display: flex;
+  flex-direction: column;
+}
+.form input, textarea, button{
+padding: .5rem;
+width: 80%;
+margin: 0 auto;
+margin-bottom: 1rem;
+background: transparent;
+color: #01010d;
+border: 0;
+border-bottom: 2px solid #e65c00;
+}
+.form textarea{
+ margin: 0 auto;
+}
+.form button{
+  margin: 0 auto;
+  background: #e65c00;
+  border-radius: 5px;
+  position: relative;
+  top: 3.5rem;
+  color: #cccccc;
+  width: 50%;
+  letter-spacing: 0.1rem;
 }
 /* Footer */
 .footer {
