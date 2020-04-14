@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import ManagementCard from "./ManagementCard";
 
 // imported data
 import { managementData } from "../data/data";
-import ManagementCard from "./ManagementCard";
 
 export default function About() {
   const [management] = useState(managementData); 
