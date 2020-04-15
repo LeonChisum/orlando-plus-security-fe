@@ -51,7 +51,7 @@ export default function Footer() {
           </a>
         </section>
         <section>
-          <img src={BBB} alt="better business bureau" />
+          {/* <img src={BBB} alt="better business bureau" /> */}
           <img src={FDAC} alt="Department of Agriculture Seal" />
         </section>
       </div>
