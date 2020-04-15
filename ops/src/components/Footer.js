@@ -8,7 +8,7 @@ import FDAC from "../images/FDACS-title-seal.png";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="footer-nav">
+      <div className="footer-nav d-sm-flex flex-sm-column justify-content-between align-items-center">
         <section>
           <h5>Orlando Plus Security</h5>
           <p>Strong. Friendly. Reliable.</p>
@@ -19,6 +19,7 @@ export default function Footer() {
           <Link to="/services">Services</Link>
           <Link to="/about">About Us</Link>
         </section>
+        <br/>
         <section>
           <div className="flex-vertical">
             <h5>Visit</h5>
@@ -42,6 +43,7 @@ export default function Footer() {
             <a href="tel:4078015323">(407)-801-5323</a>
           </div>
         </section>
+        <br />
         <section>
           <h5>Follow</h5>
           <a href="https://www.facebook.com/OrlPlus/" target="_blank" rel="noopener noreferrer">

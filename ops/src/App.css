@@ -12,13 +12,14 @@
   background: #e65c00; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #f9d423,
-    #e65c00
+    #d4af37,
+    
+    #01010d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #f9d423,
-    #e65c00
+    #d4af37,
+    #01010d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -36,7 +37,7 @@
 }
 
 .nav-list li :hover {
-  color: #e65c00;
+  color: #d4af37;
   opacity: 0.5;
 }
 
@@ -107,7 +108,7 @@
   border-radius: 20px;
   border: none;
   box-shadow: 0px 10px 15 px rgba(1, 1, 13, 0.3);
-  background: orange;
+  background: #d4af37;
   color: white;
 }
 .home-content button a {
@@ -178,7 +179,7 @@
   border: 1rem solid #ebeef8;
 }
 .management-name {
-  color: #e65c00;
+  color: #d4af37;
   font-weight: 700;
   font-size: 2.5rem;
   margin: 1.5rem 0;
@@ -256,14 +257,14 @@ margin-bottom: 1rem;
 background: transparent;
 color: #01010d;
 border: 0;
-border-bottom: 2px solid #e65c00;
+border-bottom: 2px solid #d4af37;
 }
 .form textarea{
  margin: 0 auto;
 }
 .form button{
   margin: 0 auto;
-  background: #e65c00;
+  background: #d4af37;
   border-radius: 5px;
   position: relative;
   top: 3.5rem;
@@ -279,6 +280,7 @@ border-bottom: 2px solid #e65c00;
 
 .footer img {
   height: 12%;
+  width: 100%;
   padding: 10px 0;
 }
 
@@ -288,12 +290,12 @@ border-bottom: 2px solid #e65c00;
 }
 .footer a:hover {
   text-decoration: none;
-  color: orange;
+  color: #d4af37;
   font-weight: 490;
 }
 
 .footer-nav {
-  height: 300px;
+  /* height: 300px; */
   margin: 0 auto;
   font-size: 0.8rem;
   display: flex;
@@ -306,7 +308,7 @@ border-bottom: 2px solid #e65c00;
 }
 
 .footer-nav section {
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   flex-direction: column;
 }
