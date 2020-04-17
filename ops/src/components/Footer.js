@@ -8,7 +8,7 @@ import FDAC from "../images/FDACS-title-seal.png";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="footer-nav d-sm-flex flex-sm-column justify-content-between align-items-center">
+      <div className="footer-nav d-sm-flex flex-sm-column flex-lg-row justify-content-between align-items-center">
         <section>
           <h5>Orlando Plus Security</h5>
           <p>Strong. Friendly. Reliable.</p>
@@ -49,10 +49,6 @@ export default function Footer() {
           <a href="https://www.facebook.com/OrlPlus/" target="_blank" rel="noopener noreferrer">
             Facebook
           </a>
-        </section>
-        <section>
-          {/* <img src={BBB} alt="better business bureau" /> */}
-          <img src={FDAC} alt="Department of Agriculture Seal" />
         </section>
       </div>
       <small className="footer-copyright">

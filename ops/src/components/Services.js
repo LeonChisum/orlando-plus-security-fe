@@ -10,9 +10,10 @@ export default function Services() {
 
   return (
     <div>
-      <section className="sub-header services-header-bg overlay">
+      <section className="sub-header services-header-bg">
         <h4>WHAT WE DO</h4>
         <p>"Planned preperation prevents poor performance"</p>
+        <div className="overlay"></div>
       </section>
       <div className="px-3 service-container">
         {services.map(i => {

@@ -59,7 +59,7 @@ export const servicesData = [
   {
     title: "Contracted Services",
     icon: 'contract',
-    info: "Let OPS be your one stop shop! We’ve maintained relationshipswith companies that offer other convention services, so our clients are able to sign just one contract and send one deposit. Let us coordinate your Off-Duty Law Enforcement, K9s and Medical services, you have enough to plan.",
+    info: "Let OPS be your one stop shop! We’ve maintained relationships with companies that offer other convention services, so our clients are able to sign just one contract and send one deposit. Let us coordinate your Off-Duty Law Enforcement, K9s and Medical services, as you already have enough to plan.",
     id: 5
   }
 ];
