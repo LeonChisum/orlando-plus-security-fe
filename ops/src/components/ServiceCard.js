@@ -3,7 +3,6 @@ import SVGIcon from "../icons/SVG"
 
 export default function ServiceCard(props) {
   const { title, info, icon } = props.service;
-  console.log(icon)
 
   return (
     <div className="card mb-3 service-card" >

@@ -10,9 +10,9 @@ export default function ManagementCard(props) {
         <img
           src={props.manager.image}
           alt="management"
-          className="management-img align-self-lg-center"
+          className="align-self-lg-center management-img "
         />
-        <section className="w-50">
+        <section className="management-info">
           <section>
             <h1 className="management-name">{props.manager.name}</h1>
             <h2 className="management-title">{props.manager.title}</h2>

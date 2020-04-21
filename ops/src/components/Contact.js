@@ -11,7 +11,6 @@ export default function Contact() {
       <section className="team-container">
         <ContactForm />
       </section>
-      {/* <UnderConstruction /> */}
     </div>
   );
 }
