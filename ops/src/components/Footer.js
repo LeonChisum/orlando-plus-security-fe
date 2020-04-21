@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-//imported images
-import BBB from "../images/BBB.png";
-import FDAC from "../images/FDACS-title-seal.png";
-
 export default function Footer() {
   return (
     <div className="footer">

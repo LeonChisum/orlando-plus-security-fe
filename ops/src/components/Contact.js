@@ -1,6 +1,5 @@
 import React from "react";
 import ContactForm from "./ContactForm"
-import UnderConstruction from './UnderConstruction'
 
 export default function Contact() {
   return (

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import UnderConstruction from "./UnderConstruction";
 import ServiceCard from "./ServiceCard";
 
 //Data for each service imported here
 import { servicesData } from "../data/data";
 
 export default function Services() {
-  const [services, setServices] = useState(servicesData);
+  const [services] = useState(servicesData);
 
   return (
     <div>

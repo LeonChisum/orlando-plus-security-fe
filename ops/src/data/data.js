@@ -47,19 +47,19 @@ export const servicesData = [
   {
     title: "CCTV",
     icon: 'cctv',
-    info: "OPS is experienced in temporary CCTV installations for trade show and conventions. Our CCTV units come equipped with one terabit DVRs that have 24hr recording capabilities and 4 cameras with professionals stands. In additional, a central viewing station can be installed. Depending on your space and/or event CCTV installations can assist with asset protection,crowd control and overall flow of your event.",
+    info: "OPS is experienced in temporary CCTV installations for trade show and conventions. Our CCTV units come equipped with one terabit DVRs that have 24hr recording capabilities and 4 cameras with professional stands. In addition, a central viewing station can be installed. Depending on your space and/or event CCTV installations can assist with asset protection, crowd control and overall flow of your event.",
     id: 3
   },
   {
     title: "Event Security Consulting",
     icon: 'consultant',
-    info: "The OPS Management Team has experience with trade show and conventions throughout the US. We can assist with all your security needs, from start to finish. Let us take care of security off your plate, when planning your next convention.",
+    info: "The OPS Management Team has experience with trade shows and conventions throughout the US. We can assist with all your security needs, from start to finish. Let us take care of security, when planning your next convention.",
     id: 4
   },
   {
     title: "Contracted Services",
     icon: 'contract',
-    info: "Let OPS be your one stop shop! We’ve maintained relationships with companies that offer other convention services, so our clients are able to sign just one contract and send one deposit. Let us coordinate your Off-Duty Law Enforcement, K9s and Medical services, as you already have enough to plan.",
+    info: "Let OPS be your one stop shop! We’ve maintained relationships with companies that offer other convention services, which allow our clients to sign one contract and send one deposit. Let us coordinate your Off-Duty Law Enforcement, K9s and Medical services, as you already have enough to plan.",
     id: 5
   }
 ];

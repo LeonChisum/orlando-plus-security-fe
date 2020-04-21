@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Form, Segment, Button } from "semantic-ui-react";
+import React from "react";
 
 export default function ContactForm() {
 

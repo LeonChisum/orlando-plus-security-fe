@@ -6,13 +6,21 @@ export default function ManagementCard(props) {
   return (
     <div className="card-container">
       <img src={orlando} alt="card backround" className="card-img" />
-      <img src={props.manager.image} alt="management" className="management-img" />
-      <section>
-        <h1 className="management-name">{props.manager.name}</h1>
-        <h2 className="management-title">{props.manager.title}</h2>
-      </section>
-      <section>
-        <p>{props.manager.bio}</p>
+      <section className="d-lg-flex justify-content-lg-around">
+        <img
+          src={props.manager.image}
+          alt="management"
+          className="management-img align-self-lg-center"
+        />
+        <section className="w-50">
+          <section>
+            <h1 className="management-name">{props.manager.name}</h1>
+            <h2 className="management-title">{props.manager.title}</h2>
+          </section>
+          <section className="management-bio">
+            <p>{props.manager.bio}</p>
+          </section>
+        </section>
       </section>
     </div>
   );

@@ -6,7 +6,7 @@ export default function ServiceCard(props) {
   console.log(icon)
 
   return (
-    <div className="card mb-3" style={{width: '100%'}}>
+    <div className="card mb-3 service-card" >
       <div className="card-body d-flex flex-column align-items-center">
         <SVGIcon name={icon} fill='#d4af37' width={70} className="mr-2"/>
         <br />
