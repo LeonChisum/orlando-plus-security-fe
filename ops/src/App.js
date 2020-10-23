@@ -8,6 +8,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Services from './components/Services'
 import Footer from './components/Footer'
+import Courses from './components/Courses/Courses'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route exact path='/about' component={About} />
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/services' component={Services} />
+      <Route exact path='/securitydtraining' component={Courses} />
       <Footer />
     </div>
   )

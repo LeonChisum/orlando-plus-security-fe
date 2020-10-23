@@ -145,6 +145,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* align-content: space-between; */
   justify-content: center;
   color: #cccccc;
   background-color: #ebeef8;
@@ -156,7 +157,7 @@
   width: 100%;
   height: 26rem;
   object-fit: cover;
-  /* clip-path: polygon(
+  clip-path: polygon(
     30% 0%,
     70% 0%,
     99% 0,
@@ -165,7 +166,7 @@
     22% 86%,
     0 75%,
     0 0
-  ); */
+  );
 }
 .management-img {
   width: 15rem;
@@ -180,16 +181,12 @@
   color: #d4af37;
   font-weight: 700;
   font-size: 2.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.7rem;
+  margin: 1.5rem 0;
   text-transform: uppercase;
 }
 .management-title {
   font-size: 1.3rem;
   font-weight: 300;
-  color: #01010d;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 2rem;
 }
 .card-container p {
   color: black;
@@ -197,7 +194,6 @@
   padding: 0 1.5rem;
   margin: 1.5rem 0;
   font-style: italic;
-  text-align: left;
 }
 
 /* UnderConstruction */
@@ -207,17 +203,22 @@
 
 /* Services */
 .services-header-bg {
+  background-image: url("./images/many-cameras.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 255, 0.1));
   position: relative;
-  background-image: rgba(0, 0, 0, 0.7) url("./images/many-cameras.jpg")
-    no-repeat fixed center;
-  background-blend-mode: overlay;
-  color: white;
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-linear-gradient(rgba(0, 0, 0, 0.5));
+}
 .services-header-bg:nth-child(1) {
+  position: relative;
   z-index: 3;
 }
 .services-header-bg:nth-child(2) {
+  position: relative;
   z-index: 3;
 }
 .service-container {
@@ -242,6 +243,7 @@
   margin: 0 auto;
   padding: 0.6rem;
   border-radius: 5px;
+  /* background: #01010d; */
   border-right: 1px solid #01010d;
   border-left: 1px solid #01010d;
   display: flex;
@@ -268,7 +270,7 @@ button {
   border-radius: 5px;
   position: relative;
   top: 3.5rem;
-  color: #01010d;
+  color: #cccccc;
   width: 50%;
   letter-spacing: 0.1rem;
 }
@@ -277,6 +279,13 @@ button {
   background: #01010d;
   color: #cccccc;
 }
+
+.footer img {
+  height: 12%;
+  width: 100%;
+  padding: 10px 0;
+}
+
 .footer a {
   text-decoration: none;
   color: #cccccc;
@@ -288,6 +297,7 @@ button {
 }
 
 .footer-nav {
+  /* height: 300px; */
   margin: 0 auto;
   font-size: 0.8rem;
   display: flex;
@@ -300,6 +310,7 @@ button {
 }
 
 .footer-nav section {
+  /* height: 300px; */
   display: flex;
   flex-direction: column;
 }
@@ -311,51 +322,4 @@ button {
 
 .footer-copyright {
   text-align: center;
-  color: #d4af37;
-}
-/* Targeting different screen sizes */
-
-@media (min-width: 992px) {
-  .form-container {
-    width: 450px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  .card-container {
-    width: 72%;
-    color: #cccccc;
-    background-color: #ebeef8;
-    padding-top: 10px;
-    margin: 1rem auto;
-    box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  .card-container .card-img {
-    display: none;
-  }
-  .management-info{
-    width:50%
-  }
-  .management-name{
-    border-bottom: 2px solid #d4af37;
-    font-size: xx-large;
-  }
-  .management-title{
-    border-bottom: none;
-    font-size: medium;
-  }
-  .management-img {
-    margin: 0;
-    z-index: 999;
-    border: 2px solid #d4af37;
-    padding: 10px;
-  }
-  .management-bio p {
-    line-height: 1.7;
-  }
-  .service-card{
-    width: 52%;
-    margin: 0 auto;
-  }
-
 }

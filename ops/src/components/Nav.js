@@ -23,6 +23,9 @@ export default function Nav() {
                     <li>
                         <Link to='/contact'>Contact</Link>
                     </li>
+                    <li>
+                        <Link to='/securitydtraining'>Training</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
