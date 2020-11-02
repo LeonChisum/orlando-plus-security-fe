@@ -84,3 +84,37 @@
 .course-desc li {
   margin-bottom: 4%;
 }
+
+.course-contact {
+  background-color: #01010d;
+  color: #cccccc;
+  padding: 10% 5%;
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.course-contact::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #d4af37;
+  background: linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+  background: -webkit-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+  background: -moz-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+  clip-path: circle(30.8% at 100% 50%);
+}
+
+.course-contact h3,
+button {
+  font-size: 1rem;
+  font-variant: small-caps;
+  color: #cccccc;
+}
+
+.course-contact span {
+  color: #d4af37;
+}
