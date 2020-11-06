@@ -1,8 +1,9 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
+import "./App.css"
 
 // components
-import Nav from '../src/components/Nav'
+import Nav from '../src/components/Nav/Nav'
 import Home from '../src/components/Home'
 import About from './components/About'
 import Contact from './components/Contact'

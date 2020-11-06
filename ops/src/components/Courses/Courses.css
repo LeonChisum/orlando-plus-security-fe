@@ -19,12 +19,11 @@
   font-variant: small-caps;
   font-size: 1.2rem;
   line-height: 1.45;
+  position: relative;
 }
-
 #D {
   color: #d4af37;
   font-weight: 700;
-  padding: 25%;
 }
 
 .course-cta {
@@ -85,19 +84,26 @@
   margin-bottom: 4%;
 }
 
+.course-desc span {
+  color: #d4af37;
+  font-weight: 600;
+}
+
 .course-contact {
   background-color: #01010d;
   color: #cccccc;
   padding: 10% 5%;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   position: relative;
+  z-index: 22;
 }
 
 .course-contact::before {
   content: "";
   width: 50%;
   height: 50%;
+  opacity: 0.6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -107,6 +113,32 @@
   background: -moz-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
   clip-path: circle(30.8% at 100% 50%);
 }
+.course-contact::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: -21%;
+  left: -28%;
+  opacity: 0.3;
+  background: #d4af37;
+  background: linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+  background: -webkit-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+  background: -moz-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    4% 100%,
+    5% 5%,
+    95% 5%,
+    94% 95%,
+    7% 95%,
+    4% 100%,
+    100% 100%,
+    100% 0%
+  );
+  z-index: -1;
+}
 
 .course-contact h3,
 button {
@@ -115,6 +147,7 @@ button {
   color: #cccccc;
 }
 
-.course-contact span {
+.course-contact a {
+  text-decoration: none;
   color: #d4af37;
 }

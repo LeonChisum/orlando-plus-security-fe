@@ -49,11 +49,11 @@ const Courses = () => {
               examinations to successfully pass this training course.
             </li>
           </ol>
-          Cost: $100.00 paid prior to or on the first day of class. No exceptions regarding late payment.
+          Cost: <span>$125.00</span> paid prior to or on the first day of class. No exceptions regarding late payment. (*Price inclundes the option of 1 provided lunch meal per class day or bring your own lunch.)
         </p>
       </section>
       <section className="course-contact d-flex flex-column align-content-center align-items-center">
-            <h3>Please contact us at <span>407-801-5323</span> to schedule your class today. </h3>
+            <h3>Please contact us at <a href="tel:4078015323">(407)-801-5323</a> to schedule your class today. </h3>
             <button className="cta-button" style ={{color: "whitesmoke"}}>Schedule <span>&rarr;</span></button>
       </section>
     </div>

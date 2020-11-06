@@ -2,15 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // images and css
-import logo from '../images/OPSLogo.png'
-import '../App.css'
+import logo from '../../images/OPSLogo.png'
+import "../Nav/Nav.css"
 
 export default function Nav() {
     return (
         <div className='header'>
             <img src={logo} alt='OPS logo' className='logo' />
-            <nav>
-                <ul className='nav-list'>
+            <div className='nav-list'>
+                <div className='nav-btn'>
+                    <div className='nav-btn-burger' />
+                </div>
+                <ul>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
@@ -27,7 +30,7 @@ export default function Nav() {
                         <Link to='/securitydtraining'>Training</Link>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     )
 }
