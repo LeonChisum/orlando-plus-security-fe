@@ -1,7 +1,6 @@
 /* Nav */
 .header {
   text-align: center;
-  padding-bottom: 5px;
   background: #e65c00; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -36,6 +35,12 @@
   transition: all 0.5s ease-in-out;
   border: 1.8px solid #cccccc;
 }
+.nav-btn.closed {
+  visibility: visible;
+}
+.nav-btn.open {
+  visibility: hidden;
+}
 
 .nav-btn-burger {
   width: 30px;
@@ -66,25 +71,48 @@
 .nav-btn-burger::after {
   transform: translateY(12px);
 }
-.nav-list ul {
-  display: flex;
-  justify-content: space-evenly;
+.nav-list .nav-menu {
+  visibility: hidden;
+  transition: all 0.35s ease;
+}
+
+.nav-list .nav-menu.open {
   height: 80vh;
   position: absolute;
   z-index: 19;
   width: 75vw;
-  top: -7px;
+  top: -2px;
   right: 0;
-  flex-direction: column;
-  background: black;
-  align-content: center;
   background: #01010d;
   border-top: 2px solid #cccccc;
   border-bottom: 2px solid #cccccc;
-  padding: 8px 0;
-  list-style: none;
-  transition: all 0.35s ease;
+  visibility: visible;
+}
+.nav-list .nav-menu.open ul {
+  height: 100%;
+}
+.nav-list .nav-menu.open ul li {
+  padding: 26px 0;
+}
+.nav-list .nav-menu.closed {
   visibility: hidden;
+}
+.nav-list .nav-menu .x {
+  text-align: left;
+  padding-left: 23px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.nav-list ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 8px 0;
+  height: 90%;
+  list-style: none;
 }
 
 .nav-list li :hover {
@@ -115,5 +143,10 @@
   padding-left: 30%;
   padding-top: 2.5rem;
 }
-@media only screen and (max-width: 600px) {
+/* Desktop */
+@media only screen and (min-width: 960px) {
+}
+
+/* Tablets */
+@media only screen and (min-width: 767px) {
 }
