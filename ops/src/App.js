@@ -5,7 +5,7 @@ import "./App.css"
 // components
 import Nav from '../src/components/Nav/Nav'
 import Home from '../src/components/Home'
-import About from './components/About'
+import About from './components/About/About'
 import Contact from './components/Contact'
 import Services from './components/Services'
 import Footer from './components/Footer'
