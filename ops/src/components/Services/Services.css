@@ -1,0 +1,46 @@
+/* Services */
+.services-header-bg {
+	background-image: url('../../images/many-cameras.jpg'), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 255, 0.1));
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: radial-linear-gradient(rgba(0, 0, 0, 0.5));
+}
+.services-header-bg:nth-child(1) {
+	position: relative;
+	z-index: 3;
+}
+.services-header-bg:nth-child(2) {
+	position: relative;
+	z-index: 3;
+}
+.service-container {
+	position: relative;
+	top: -30px;
+	z-index: 3;
+}
+.service-header {
+	font-size: 24px;
+}
+.service-description {
+	font-size: 1rem;
+	font-weight: 300;
+}
+/* Desktop */
+@media only screen and (min-width: 960px) {
+}
+
+/* Tablets */
+@media only screen and (min-width: 767px) {
+	.service-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 8px;
+	}
+	.card:nth-child(5) {
+		grid-column: 1 / 3;
+	}
+}

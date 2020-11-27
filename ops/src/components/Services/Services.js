@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import ServiceCard from "./ServiceCard";
+import "../Services/Services.css"
 
 //Data for each service imported here
-import { servicesData } from "../data/data";
+import { servicesData } from "../../data/data";
 
 export default function Services() {
   const [services] = useState(servicesData);
