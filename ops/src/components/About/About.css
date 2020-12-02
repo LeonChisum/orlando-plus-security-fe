@@ -29,7 +29,7 @@
 }
 .card-container .card-img {
 	width: 100%;
-	height: 26rem;
+	height: 16rem;
 	object-fit: cover;
 	clip-path: polygon(30% 0%, 70% 0%, 99% 0, 100% 74%, 80% 86%, 22% 86%, 0 75%, 0 0);
 }
@@ -37,14 +37,14 @@
 	text-align: center;
 }
 .management-img img {
-	width: 15rem;
-	height: 15rem;
+	width: 11rem;
+	height: 11rem;
 	object-fit: cover;
 	border-radius: 50%;
 	margin-top: -10rem;
 	z-index: 9;
 	position: relative;
-	border: 1rem solid #ebeef8;
+	border: 0.7rem solid #ebeef8;
 }
 .management-info {
 	text-align: center;
@@ -54,26 +54,42 @@
 .management-name {
 	color: #d4af37;
 	font-weight: 700;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	width: 90%;
 	margin: 1.2rem auto;
 	text-transform: uppercase;
 }
 .management-title {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-top: -16px;
 }
 .card-container p {
 	color: black;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	padding: 0 1.5rem;
 	margin: 1.5rem 0;
+	line-height: 1.8;
 	text-align: left;
 }
 /* Desktop */
 @media only screen and (min-width: 960px) {
+	.card-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.card-container p {
+		display: none;
+	}
+	.card-container:hover + .card-container p {
+		color: black;
+		font-size: 0.8rem;
+		padding: 0 1.5rem;
+		margin: 1.5rem 0;
+		line-height: 1.8;
+		text-align: left;
+	}
 }
 
 /* Tablets */

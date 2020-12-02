@@ -6,21 +6,24 @@ export default function ContactForm() {
     <div className='form-container'>
       <form className='form' name='Contact Info' method='post'>
       <input type="hidden" name="form-name" value="contact" />
+      <label> Name *
         <input
           type="text"
           name="name"
-          placeholder="Name"
         ></input>
+        </label>
+      <label>Email *
         <input
           type="email"
           name="email"
-          placeholder="Email"
         ></input>
+        </label>
+      <label> Enter a Message
         <textarea
           type="text"
           name="message"
-          placeholder="Enter a Message..."
         ></textarea>
+        </label>
         <button>SEND</button>
       </form>
     </div>
