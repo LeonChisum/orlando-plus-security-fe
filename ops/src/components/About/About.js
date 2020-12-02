@@ -21,6 +21,13 @@ export default function About() {
           })}
         </div>
       </section>
+      <section id="testimonial-section">
+        <div>
+          <h2>
+            A Word From our clients..
+          </h2>
+        </div>
+      </section>
     </div>
   );
 }
