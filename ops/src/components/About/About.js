@@ -22,10 +22,21 @@ export default function About() {
         </div>
       </section>
       <section id="testimonial-section">
-        <div>
-          <h2>
-            A Word From our clients..
-          </h2>
+        <h2>
+            Kind Words From our clients..
+        </h2>
+        <div className="testimonial-bubble">
+          <div className="testimonial-quote">
+            <blockquote>
+                You are so organized, knowledgable and skilled at creating plans which balance the needs of both the facility and the clients. It was always reassuring to see your name listed by clients as their primary contact for event security. You guys make a solid professional team with years of valuable experience...
+            <footer>
+                <cite>
+                    Beth Barrett <br/>
+                    Covention Event Security, retired
+                </cite>
+            </footer>
+            </blockquote>
+          </div>
         </div>
       </section>
     </div>
