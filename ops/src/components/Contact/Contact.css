@@ -1,7 +1,7 @@
 /* Contact */
 .form-container {
 	max-width: 400px;
-	padding: 2rem 20px;
+	padding: 2rem 0px;
 	margin: 0 auto;
 }
 .form {
@@ -31,7 +31,7 @@ textarea {
 	border: 0;
 	background: #d4af37;
 	border-radius: 5px;
-	color: white;
+	color: #01010d;
 	font-size: 1.3rem;
 	width: 100%;
 	height: 50px;
