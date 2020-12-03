@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import securityGuard from "../../images/securityguard.png";
 import "../Courses/Courses.css";
+import CoursesForm from "./CoursesForm";
 
 const Courses = () => {
   return (
+    <div>
     <div className="course-section">
-      <section className="d-flex hero-section">
+      <section className="hero-section">
         <div>
           <h3>
             Security Officer <span id="D">“D” </span>License Training
@@ -15,15 +17,17 @@ const Courses = () => {
         <img src={securityGuard} className="guard" alt="security guard"></img>
       </section>
       <section className="course-cta">
-        <h3>Looking to become a new licensed professional?</h3>
-        <hr></hr>
-        <p>
-          We are offering the State of Florida Class “D” Unarmed Security
-          License. The class is instructed by State of Florida licensed Class DI
-          Instructors with multiple years of Class D Security Officer
-          experience.
-        </p>
-        <Link to='/contact'><button className="cta-button">Learn More &rarr;</button></Link>
+        <div className="cta-hero">
+          <h3>Looking to become a new licensed professional?</h3>
+          <hr></hr>
+          <p>
+            We are offering the State of Florida Class “D” Unarmed Security
+            License. The class is instructed by State of Florida licensed Class DI
+            Instructors with multiple years of Class D Security Officer
+            experience.
+          </p>
+          <Link to='/contact'><button className="cta-button">Learn More &rarr;</button></Link>
+        </div>
       </section>
       <section className="course-desc">
         <h3>Course Description</h3>
@@ -55,9 +59,12 @@ const Courses = () => {
       </section>
       <section className="course-contact d-flex flex-column align-content-center align-items-center">
             <h3>Please contact us at <a href="tel:4078015323">(407)-801-5323</a> to schedule your class today. </h3>
-            <button className="cta-button">Schedule <span>&rarr;</span></button>
+            <button className="cta-button"><Link to='/securitydtraining/scheduleaclass'>Schedule <span>&rarr;</span></Link></button>
       </section>
+      <Route exact path='/securitydtraining/scheduleaclass' component={CoursesForm} />
     </div>
+    </div>              
+    // insert route to schedule student info
   );
 };
 
