@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import securityGuard from "../../images/securityguard.png";
 import "../Courses/Courses.css";
 
@@ -22,7 +23,7 @@ const Courses = () => {
           Instructors with multiple years of Class D Security Officer
           experience.
         </p>
-        <button className="cta-button">Learn More &rarr;</button>
+        <Link to='/contact'><button className="cta-button">Learn More &rarr;</button></Link>
       </section>
       <section className="course-desc">
         <h3>Course Description</h3>
