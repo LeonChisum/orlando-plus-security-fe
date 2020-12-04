@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Route } from 'react-router-dom'
-import securityGuard from "../../images/securityguard.png";
 import "../Courses/Courses.css";
 import CoursesForm from "./CoursesForm";
 
