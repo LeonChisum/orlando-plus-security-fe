@@ -16,11 +16,12 @@
 .form input,
 textarea {
 	padding: 0.9rem 10px;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	background: transparent;
 	color: #01010d;
 	border: 0;
 	border-bottom: 2px solid #d4af37;
+	height: 85px;
 }
 .form textarea {
 	grid-column: 1 / 3;
