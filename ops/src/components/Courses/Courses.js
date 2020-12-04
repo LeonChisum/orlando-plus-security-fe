@@ -14,7 +14,6 @@ const Courses = () => {
             Security Officer <span id="D">“D” </span>License Training
           </h3>
         </div>
-        <img src={securityGuard} className="guard" alt="security guard"></img>
       </section>
       <section className="course-cta">
         <div className="cta-hero">

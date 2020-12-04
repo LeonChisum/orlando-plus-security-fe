@@ -4,24 +4,36 @@
 }
 .hero-section {
 	display: flex;
+	position: relative;
+	background-color: #f7f7f7;
+	background-size: cover;
+	background-position-x: 106px;
+	height: 250px;
+	background-image: url('../../images//securityguard.png'), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 255, 0.1));
 }
-.hero-section img {
-	width: 50%;
-	background-color: whitesmoke;
+.hero-section::before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	opacity: 0.1;
 }
-
-.guard {
-	filter: saturate(0.2);
+.hero-section div {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+	position: relative;
 }
-
 .hero-section div h3 {
-	text-align: center;
-	margin-top: 29%;
 	padding: 10px;
 	font-variant: small-caps;
 	font-size: 1.2rem;
 	line-height: 1.45;
-	position: relative;
 }
 #D {
 	color: #d4af37;
@@ -153,6 +165,10 @@ button {
 }
 /* Desktop */
 @media only screen and (min-width: 960px) {
+}
+
+/* Tablets */
+@media only screen and (min-width: 767px) {
 	.hero-section {
 		display: none !important;
 	}
@@ -198,8 +214,4 @@ button {
 	.course-desc p {
 		line-height: 2.7;
 	}
-}
-
-/* Tablets */
-@media only screen and (min-width: 767px) {
 }

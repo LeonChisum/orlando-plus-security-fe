@@ -30,6 +30,9 @@
 	object-fit: cover;
 	clip-path: polygon(30% 0%, 70% 0%, 99% 0, 100% 74%, 80% 86%, 22% 86%, 0 75%, 0 0);
 }
+.card-container .overlay-bg .management-name {
+	display: none;
+}
 .management-img {
 	text-align: center;
 }
@@ -174,6 +177,7 @@ blockquote cite:before {
 		opacity: 1;
 	}
 	.card-container:hover .overlay-bg h1 {
+		display: block;
 		text-align: center;
 		width: 100%;
 		position: relative;
