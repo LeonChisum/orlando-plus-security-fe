@@ -28,6 +28,7 @@ textarea {
 	margin: 20px 0;
 }
 .form button {
+	grid-column: 2 / 3;
 	border: 0;
 	background: #d4af37;
 	border-radius: 5px;

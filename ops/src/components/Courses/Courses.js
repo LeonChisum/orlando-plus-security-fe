@@ -59,7 +59,7 @@ const Courses = () => {
       </section>
       <section className="course-contact d-flex flex-column align-content-center align-items-center">
             <h3>Please contact us at <a href="tel:4078015323">(407)-801-5323</a> to schedule your class today. </h3>
-            <button className="cta-button"><Link to='/securitydtraining/scheduleaclass'>Schedule <span>&rarr;</span></Link></button>
+            <button className="cta-button"><Link to='/contact'>Schedule <span>&rarr;</span></Link></button>
       </section>
       <Route exact path='/securitydtraining/scheduleaclass' component={CoursesForm} />
     </div>
