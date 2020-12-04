@@ -16,7 +16,7 @@ export default function Nav() {
                <div className={`nav-btn ${menuHidden}`} onClick={() => setMenuHidden('open')}>
                         <div className='nav-btn-burger' />
                 </div> 
-                <div className={`nav-menu ${menuHidden}`} onClick={() => setMenuHidden('closed')}>
+                <div id="desktop-menu" className={`nav-menu ${menuHidden}`} onClick={() => setMenuHidden('closed')}>
                     <div className='x'>X</div>
                     <ul>
                         <li>

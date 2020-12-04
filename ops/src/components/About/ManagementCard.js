@@ -19,7 +19,8 @@ export default function ManagementCard(props) {
         </section>
       </div>
       <div className="overlay-bg">
-         <p>{props.manager.bio}</p>
+        <h1 className="management-name">{props.manager.name}</h1>
+        <p>{props.manager.bio}</p>
       </div>
     </div>
   );
