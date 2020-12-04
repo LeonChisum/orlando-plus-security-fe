@@ -9,9 +9,9 @@ export default function Home() {
           Strong, friendly, reliable for all your security needs serving the
           greater Orlando area
         </h2>
-        <a href="mailto:info@Orlandoplussecurity.com" target="_blank" rel="noopener noreferrer">
+        {/* <a href="mailto:info@Orlandoplussecurity.com" target="_blank" rel="noopener noreferrer">
           <div className="button">Get a Quote</div>
-        </a>
+        </a> */}
       </div>
     </div>
   );

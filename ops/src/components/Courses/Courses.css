@@ -1,0 +1,205 @@
+.course-section {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+}
+.hero-section {
+	display: flex;
+}
+.hero-section img {
+	width: 50%;
+	background-color: whitesmoke;
+}
+
+.guard {
+	filter: saturate(0.2);
+}
+
+.hero-section div h3 {
+	text-align: center;
+	margin-top: 29%;
+	padding: 10px;
+	font-variant: small-caps;
+	font-size: 1.2rem;
+	line-height: 1.45;
+	position: relative;
+}
+#D {
+	color: #d4af37;
+	font-weight: 700;
+}
+
+.course-cta {
+	background-color: #01010d;
+	color: #cccccc;
+	padding: 5%;
+	position: relative;
+}
+
+.course-cta h3 {
+	font-size: 1.2rem;
+	color: whitesmoke;
+	font-variant: small-caps;
+}
+
+.course-cta hr {
+	border: 1px solid #d4af37;
+	width: 49%;
+	position: absolute;
+	left: 9%;
+	top: 22%;
+}
+
+.course-cta p {
+	width: 85%;
+	line-height: 1.7;
+	padding-top: 12%;
+	font-weight: 300;
+}
+
+.cta-button {
+	padding: 10px 0;
+	margin-top: 5%;
+	color: #01010d;
+	width: 45%;
+	background: #d4af37;
+	border-radius: 5px;
+	border: 1px solid #d4af37;
+}
+.course-desc {
+	border: 1px solid #01010d;
+	margin: 5px 0;
+	padding: 5%;
+	font-variant: small-caps;
+}
+.course-desc h3 {
+	padding-top: 9%;
+	font-size: 1.2rem;
+	border-bottom: 2px solid #d4af37;
+	width: 59%;
+	padding-bottom: 2%;
+}
+.course-desc p {
+	width: 85%;
+	line-height: 1.7;
+	padding-top: 6%;
+	font-weight: 300;
+}
+
+.course-desc li {
+	margin-bottom: 4%;
+}
+
+.course-desc span {
+	color: #d4af37;
+	font-weight: 600;
+}
+
+.course-contact {
+	background-color: #01010d;
+	color: #cccccc;
+	padding: 10% 5%;
+	text-align: center;
+	margin-bottom: 1px;
+	position: relative;
+	overflow: hidden;
+	z-index: 22;
+}
+
+.course-contact::before {
+	content: '';
+	width: 50%;
+	height: 50%;
+	opacity: 0.6;
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	right: 0px;
+	background: #d4af37;
+	background: linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+	background: -webkit-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+	background: -moz-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+	clip-path: circle(30.8% at 100% 50%);
+}
+.course-contact::after {
+	content: '';
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	bottom: -21%;
+	left: -28%;
+	opacity: 0.3;
+	background: #d4af37;
+	background: linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+	background: -webkit-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+	background: -moz-linear-gradient(180deg, #d4af37 0%, #01010d 90%);
+	clip-path: polygon(0% 0%, 0% 100%, 4% 100%, 5% 5%, 95% 5%, 94% 95%, 7% 95%, 4% 100%, 100% 100%, 100% 0%);
+	z-index: -1;
+}
+
+.course-contact h3,
+button {
+	font-size: 1rem;
+	font-variant: small-caps;
+	color: #cccccc;
+}
+
+.course-contact a {
+	text-decoration: none;
+	color: #d4af37;
+}
+.course-contact .cta-button a {
+	text-decoration: none;
+	color: #01010d;
+}
+/* Desktop */
+@media only screen and (min-width: 960px) {
+	.hero-section {
+		display: none !important;
+	}
+	.course-cta {
+		background-image: url('../../images/securityguard2.png'),
+			linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 255, 0.1));
+		position: relative;
+		background-position-x: 22rem;
+		background-size: cover;
+	}
+	.course-cta::before {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: black;
+		opacity: 0.8;
+	}
+	.course-cta .cta-hero {
+		z-index: 5;
+		position: relative;
+		width: 75%;
+		color: white;
+	}
+	.course-cta .cta-hero h3 {
+		font-size: 3rem;
+	}
+	.course-cta .cta-hero hr {
+		top: 29%;
+	}
+	.course-cta .cta-hero p {
+		width: 75%;
+		line-height: 1.7;
+		padding-top: 5%;
+		font-weight: 300;
+	}
+	.cta-button {
+		color: white;
+		font-weight: 400;
+	}
+	.course-desc p {
+		line-height: 2.7;
+	}
+}
+
+/* Tablets */
+@media only screen and (min-width: 767px) {
+}

@@ -1,6 +1,6 @@
 // imported images
 import MC from "../images/MC Headshot.jpg";
-import CH from "../images/CH Headshot.JPG";
+import CH from "../images/CH Headshot.jpg";
 import TW from "../images/TW Headshot2.jpg";
 
 export const managementData = [
@@ -9,7 +9,7 @@ export const managementData = [
     image: MC,
     title: "President",
     bio:
-      "Michael retired from the Chicago Police Department after 22 years of service. He has been working in the trade show industry since 1987. Michael has experience working on-site, managing the many large events as well as security consulting in Orlando, Las Vegas, New Orleans, Chicago and San Diego, to name a few. Michael is pleased to announce his new title as President of Orlando Plus Security & Event Staffing (OPS). OPS will be providing security & event staffing to trade shows and conventions in the Central Florida area. Michael’s expertise includes but is not limited to, Executive protection, Crisis Management, Counter-terrorism, Emergency Management, Security Operations, Homeland Security, Asset Protection and Access Control.",
+      "Michael retired from the Chicago Police Department after 22 years of service. He has been working in the trade show industry since 1987. Michael has experience working on-site, managing the many large events as well as security consulting in Orlando, Las Vegas, New Orleans, Chicago and San Diego, to name a few. Michael’s expertise includes but is not limited to, Executive protection, Crisis Management, Counter-terrorism, Emergency Management, Security Operations, Homeland Security, Asset Protection and Access Control.",
     id: 1
   },
   {
