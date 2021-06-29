@@ -52,7 +52,7 @@ const Courses = () => {
               examinations to successfully pass this training course.
             </li>
           </ol>
-          Cost: <span>$125.00</span> paid prior to <strong>or</strong> on the first day of class. No exceptions regarding late payment. (*Price inclundes the option of <strong>1</strong> provided lunch meal per class day <strong>or</strong> bring your own lunch.)
+          Cost: <span>$125.00</span> paid prior to <strong>or</strong> on the first day of class. No exceptions regarding late payment.
         </p>
       </section>
       <section className="course-contact d-flex flex-column align-content-center align-items-center">
