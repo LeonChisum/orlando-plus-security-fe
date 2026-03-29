@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import './ContactSection.css'
 import ScrollReveal from '../ScrollReveal'
 
+const isPreview = process.env.REACT_APP_NETLIFY_CONTEXT !== 'production'
+const FORM_NAME = isPreview ? 'contact-test' : 'contact'
+
 export default function ContactSection() {
   const [status, setStatus] = useState('idle') // idle | sending | success | error
 
@@ -84,7 +87,7 @@ export default function ContactSection() {
                 </div>
               ) : (
                 <form
-                  name="contact"
+                  name={FORM_NAME}
                   method="POST"
                   data-netlify="true"
                   netlify-honeypot="bot-field"
@@ -92,7 +95,7 @@ export default function ContactSection() {
                   className="contact-form"
                   noValidate
                 >
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form-name" value={FORM_NAME} />
                   <p className="contact-honeypot" aria-hidden="true">
                     <label>
                       Don't fill this out: <input name="bot-field" tabIndex={-1} />
