@@ -115,50 +115,66 @@ When the user provides a screenshot or reference image:
 | Deployment | Netlify                                   |
 | Analytics  | Google Analytics (G-Y7W8B3FEZB)           |
 
-**Design tokens:**
+**Design tokens (CSS custom properties in `App.css`):**
 
 ```
-Gold:   #d4af37
-Dark:   #01010d
-Orange: #e65c00
-Gray:   #cccccc
-Fonts:  Bebas Neue, Squada One, Stardos Stencil (Google Fonts)
+--gold:       #d4af37      Primary gold accent
+--gold-light: #e8c84d      Hover state gold
+--gold-dim:   rgba(212,175,55,0.15)  Tinted backgrounds
+
+/* Warm blacks — NO navy/blue. Each has a faint gold undertone */
+--dark:       #01010d      Near-black base (body bg)
+--dark-2:     #0a0901      Warm dark (contact, alt sections)
+--dark-3:     #100f04      Warm mid-dark (training section)
+--dark-card:  #17160a      Card surfaces
+
+--gray:       #cccccc      Primary text
+--gray-mid:   #999aaa      Secondary/muted text
+--orange:     #e65c00      Fallback accent
+
+Fonts:  Bebas Neue (display), Squada One (headings/UI), Stardos Stencil (accent)
+
+/* Section gradient pattern — each section uses variation of: */
+linear-gradient(to top, #d4af37, #01010d)  ← nav/brand gradient
+radial-gradient gold glows at 4–8% opacity ← ambient section warmth
 ```
 
 ---
 
-## File Map
+## File Map (single-page — all anchor-scroll)
 
 ```
 src/
-├── App.js                  → route definitions
-├── App.css                 → page-level layout
-├── index.css               → global reset + base styles
+├── App.js                  → single-page layout (no router)
+├── App.css                 → design tokens, global utilities, buttons
+├── index.css               → minimal CSS reset
 ├── data/data.js            → managementData[3], servicesData[5]
 ├── icons/SVG.js            → inline SVG (guards|staff|cctv|consultant|contract)
 └── components/
-    ├── Nav/Nav.js + Nav.css
-    ├── Home.js
-    ├── Footer.js
-    ├── UnderConstruction.js
-    ├── About/About.js, About.css, ManagementCard.js
-    ├── Contact/Contact.js, Contact.css, ContactForm.js
-    ├── Services/Services.js, Services.css, ServiceCard.js
-    └── Courses/Courses.js, Courses.css, CoursesForm.js
+    ├── ScrollReveal.js     → IntersectionObserver fade-in wrapper
+    ├── Nav/Nav.js + Nav.css          → fixed frosted-glass nav, anchor links
+    ├── Hero/Hero.js + Hero.css       → full-bleed hero #home
+    ├── Marquee/MarqueeBar.js + .css  → client/venue marquee strip (between hero and services)
+    ├── Services/ServicesSection.js + ServicesSection.css
+    │     mobile: stacked grid | tablet+: carousel (prev/next arrows, 340px fixed card height)
+    ├── About/AboutSection.js + AboutSection.css
+    │     management cards (tap to expand bio) + testimonial block
+    ├── Training/TrainingSection.js + TrainingSection.css
+    │     accordion course desc/requirements, meta pills (42hr/$125/75%)
+    ├── Contact/ContactSection.js + ContactSection.css
+    │     Netlify form (honeypot preserved), success/error states
+    └── Footer/Footer.js (at components/Footer.js) + Footer/Footer.css
 ```
 
----
+## Page Anchor Sections
 
-## Routes
-
-| Path                                | Component   |
-| ----------------------------------- | ----------- |
-| `/`                                 | Home        |
-| `/about`                            | About       |
-| `/contact`                          | Contact     |
-| `/services`                         | Services    |
-| `/securitydtraining`                | Courses     |
-| `/securitydtraining/scheduleaclass` | CoursesForm |
+| Anchor      | Component       |
+| ----------- | --------------- |
+| `#home`     | Hero            |
+| `#services` | ServicesSection |
+| `#about`    | AboutSection    |
+| `#training` | TrainingSection |
+| `#contact`  | ContactSection  |
 
 ---
 

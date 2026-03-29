@@ -1,0 +1,184 @@
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 68px; /* nav height */
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.04);
+  transition: transform 8s ease;
+  will-change: transform;
+}
+
+.hero:hover .hero-bg {
+  transform: scale(1.06);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(1, 1, 13, 0.88) 0%,
+    rgba(1, 1, 13, 0.72) 50%,
+    rgba(7, 7, 26, 0.92) 100%
+  );
+}
+
+/* golden gradient sweep at bottom */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background: linear-gradient(to top, var(--dark) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 24px;
+  max-width: 780px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* badge row */
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-head);
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  animation: fadeDown 0.7s ease both;
+}
+
+.hero-badge-logo {
+  height: 26px;
+  width: auto;
+  opacity: 0.9;
+}
+
+/* headline */
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  line-height: 1;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.hero-headline span {
+  color: var(--gold);
+  display: block;
+}
+
+/* sub */
+.hero-sub {
+  font-size: clamp(0.9rem, 2.2vw, 1.05rem);
+  color: var(--gray-mid);
+  max-width: 520px;
+  line-height: 1.75;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+/* CTA row */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+
+/* trust logos */
+.hero-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 8px;
+  animation: fadeUp 0.7s 0.45s ease both;
+}
+
+.hero-trust-item img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0.85) grayscale(0.2);
+  transition: filter 0.25s ease;
+}
+
+.hero-trust-item img:hover {
+  filter: brightness(1) grayscale(0);
+}
+
+/* scroll indicator */
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeUp 1s 0.8s ease both;
+}
+
+.hero-scroll-line {
+  display: block;
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 1.8s ease-in-out infinite;
+}
+
+/* ---- animations ---- */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.8); }
+  50%       { opacity: 1;   transform: scaleY(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge, .hero-headline, .hero-sub,
+  .hero-actions, .hero-trust, .hero-scroll-hint {
+    animation: none;
+  }
+  .hero-bg, .hero:hover .hero-bg { transform: none; transition: none; }
+  .hero-scroll-line { animation: none; }
+}
