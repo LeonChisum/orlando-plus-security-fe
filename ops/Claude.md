@@ -189,3 +189,127 @@ servicesData: [{ id, title, icon, info }]; // 5 entries; icon → SVG.js name pr
 3. Bootstrap mismatch: npm=v5.3.8, CDN in index.html=v4.0.0
 4. `ContactForm` and `CoursesForm` are identical — refactor when touching either
 5. Footer copyright reads 2020
+
+## Design Philosophy
+
+Core Principles: Precision, depth, and fluidity define this design system. Every surface exists in three-dimensional space, illuminated by soft ambient light sources that breathe and move. The design communicates premium security infrastructure—reliable, elite, and engineered with precision. Nothing is arbitrary: every shadow has layered depth, every gradient transitions smoothly between dark and gold tones, and every animation uses refined expo-out easing. The goal is software that feels secure, high-end, and trustworthy without being flashy.
+
+Vibe: Cinematic meets executive security. Imagine a high-end security operations center layered with subtle gold reflections—deep near-blacks (#01010d, #050506) punctuated by warm gold light (#d4af37). The aesthetic is authoritative yet refined, using gold highlights to create warmth and trust within a dark, controlled environment. It should feel like a premium protection service operating quietly in the background—powerful, precise, and always in control.
+Differentiation: The signature of this style is layered ambient gold lighting and interactive depth. Instead of cool indigo glows, the system uses warm gold illumination to create a sense of prestige and reliability.
+
+## Design Token System (The DNA)
+
+Color Strategy: Deep Security + Gold Illumination
+The palette is built on near-black foundations with a gold-based accent system that communicates trust, value, and premium service.
+Token Value Usage
+background-deep #01010d Absolute darkest — footer, deep layers
+background-base #050506 Primary page canvas
+background-elevated #0a0a0c Elevated surfaces
+surface rgba(255,255,255,0.05) Cards, containers
+surface-hover rgba(255,255,255,0.08) Hover state
+foreground #EDEBE6 Primary text (slightly warm white)
+foreground-muted #A8A39A Body text
+foreground-subtle rgba(255,255,255,0.60) Tertiary text
+accent #d4af37 Primary gold
+accent-bright #f1d36b Hover gold
+accent-deep #a38728 Pressed / darker gold
+accent-glow rgba(212,175,55,0.35) Gold glow
+border-default rgba(255,255,255,0.06) Subtle borders
+border-hover rgba(255,255,255,0.10) Hover borders
+border-accent rgba(212,175,55,0.35) Gold borders
+Background System: Layered Ambient Gold Lighting
+Layer 1 — Base Gradient
+bg-[radial-gradient(ellipse_at_top,#0a0a0f_0%,#050506_50%,#01010d_100%)]
+Layer 2 — Noise Texture
+Subtle grain at opacity: 0.015
+Layer 3 — Animated Gradient Blobs (Gold-Toned)
+Primary blob: Gold (#d4af37) at 20–25% opacity
+Secondary blob: Warm amber/gold mix at 12–15%
+Tertiary blob: Dark bronze tone at 10–12%
+Bottom glow: Soft gold pulse at 8–10%
+@keyframes float {
+0%, 100% { transform: translateY(0) rotate(0deg); }
+50% { transform: translateY(-20px) rotate(1deg); }
+}
+Layer 4 — Grid Overlay
+64px grid at opacity: 0.02
+Typography System
+Font Stack: "Inter", "Geist Sans", system-ui, sans-serif
+Gradient Headlines (Gold Variant)
+bg-gradient-to-b from-white via-white/90 to-white/70 bg-clip-text text-transparent
+Accent Highlight (Gold Sweep)
+bg-gradient-to-r from-[#d4af37] via-[#f1d36b] to-[#d4af37] bg-clip-text text-transparent
+Radius & Border System
+(Same structure — unchanged)
+Large containers: rounded-2xl
+Cards: rounded-2xl
+Buttons: rounded-lg
+Borders: subtle, gold-accented on interaction
+Shadow & Glow System (Gold-Based)
+Base Card Shadow
+shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_2px_20px_rgba(0,0,0,0.5),0_0_40px_rgba(0,0,0,0.3)]
+Hover Shadow (Gold Glow)
+shadow-[0_0_0_1px_rgba(255,255,255,0.1),0_8px_40px_rgba(0,0,0,0.6),0_0_80px_rgba(212,175,55,0.15)]
+CTA Glow
+shadow-[0_0_0_1px_rgba(212,175,55,0.6),0_4px_14px_rgba(212,175,55,0.4),inset_0_1px_0_0_rgba(255,255,255,0.2)]
+Component Styling Principles
+Buttons
+Primary Button (Gold):
+Background: #d4af37
+Hover: #f1d36b
+Active: #a38728
+Glow: gold ambient shadow
+Subtle shine animation on hover
+Secondary Button:
+Background: rgba(255,255,255,0.05)
+Hover: rgba(255,255,255,0.08)
+Cards & Containers
+Gold Spotlight Effect:
+Radial gradient using rgba(212,175,55,0.15)
+Follows cursor
+Fades in on hover
+Inputs
+Background: #0F0F12
+Focus: gold border + glow
+Placeholder: muted gray
+Interaction System
+Hover
+Lift: translateY(-4px)
+Glow increases (gold)
+Border brightens slightly
+Focus
+ring-2 ring-[#d4af37]/50 ring-offset-2 ring-offset-[#050506]
+Active
+scale-[0.98]
+Reduced glow
+Layout Principles
+(Unchanged — already solid and systemized)
+Section spacing: py-24 → py-32
+Bento grid layouts
+Asymmetry encouraged
+Mobile-first responsive scaling
+The "Bold Factor" (Gold Variant)
+These MUST exist:
+Ambient gold gradient blobs
+Mouse-tracking gold spotlight
+Gold-accent gradient typography
+Multi-layer shadows with gold glow
+Scroll-based cinematic depth
+Tight, precise micro-interactions
+Anti-Patterns
+Avoid:
+Bright yellow (too cheap) → stay in muted gold range
+Flat black backgrounds (always layer depth)
+Overusing gold (it’s an accent, not a base)
+Blue accents (breaks brand consistency)
+Heavy animations (keep it precise, not flashy)
+Motion
+(Unchanged timing system)
+200–300ms interactions
+Expo-out easing
+Subtle movement only
+Accessibility
+Gold on dark must maintain contrast (use brighter gold when needed)
+Always include focus rings
+Reduce motion when prefers-reduced-motion is set
+Do not rely on gold alone for meaning
